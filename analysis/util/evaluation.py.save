@@ -8,8 +8,5 @@ def SMAPE(truth,pred):
     Return:
     recall score(float)
     """
-    dom=(np.abs(truth)+np.abs(pred))
-    if dom>0:
-        return np.mean(np.abs(truth-pred)*2/dom)
-    else:
-        return 0
+    dom=
+    return np.mean(np.abs(truth-pred)*2/(np.abs(truth)+np.abs(pred)))
