@@ -10,6 +10,6 @@ def SMAPE(truth,pred):
     """
     dom=(np.abs(truth)+np.abs(pred))
     if dom>0:
-        return np.mean(np.abs(truth-pred)*2/dom)
+        return np.abs(truth-pred)*2/dom
     else:
         return 0
